@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://unpkg.com/htmx.org"></script>
     <title>My Website</title>
 </head>
 <body>
+	<link rel="stylesheet" href="styles.css">
     <h1>Hello, World!</h1>
     <p>Welcome to my website.</p>
+	<button hx-get="content.html" hx-target="#content">Load Content</button>
+	<div id="content"></div>
 </body>
 </html>
+
+
