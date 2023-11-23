@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script src="https://unpkg.com/htmx.org"></script>
+		<title>My Website</title>
+		</head>
+
+	<body>
+		<link rel="stylesheet" href="styles.css">
+		<h1>Blog blog blog</h1>
+		<p>Welcome to my website.</p>
+		<p>A | B | C</p>
+		<button hx-get="content.html" hx-target="#content">press</button>
+		<div id="content"></div>
+
+		<a href="/blog">Blog</a>
+		<button hx-post="/clicked"
+				hx-trigger="click"
+				hx-target="#parent-div"
+				hx-swap="outerHTML"> Click Me! </button>
+
+
+		</body>
+
+	</html>
