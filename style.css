@@ -1,0 +1,36 @@
+/* General Styles */
+body {
+    font-family: sans-serif; 
+    margin: 0; 
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+/* Layout - Mobile First */
+header {
+    background-color: #f0f0f0; 
+    text-align: center;  
+}
+
+.blog-preview, 
+.projects {
+    margin-bottom: 20px;
+}
+
+.blog-preview ul,
+.projects ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+/* Larger Screens - Grid Tweak */
+@media (min-width: 600px) { 
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible columns */
+        gap: 20px; 
+    }
+}
+
