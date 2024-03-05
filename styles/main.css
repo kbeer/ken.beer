@@ -18,9 +18,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav ul {
@@ -37,10 +40,13 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: #222;
+    background-color: #fff;
 }
 
 main {
@@ -55,11 +61,19 @@ section {
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
 }
 
 #hero {
     text-align: center;
     padding: 4rem 0;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
 }
 
 #hero h1 {
@@ -69,12 +83,13 @@ section {
 
 #hero p {
     font-size: 1.5rem;
-    color: #666;
+    color: #ccc;
 }
 
 footer {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
     text-align: center;
     padding: 1rem;
+    margin-top: 2rem;
 }
