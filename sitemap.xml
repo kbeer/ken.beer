@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://ken.beer/</loc>
+         <lastmod>2025-07-27</lastmod>
+    </url>
+    <url>
+         <loc>https://ken.beer/about/</loc>
+         <lastmod>2025-07-27</lastmod>
+    </url>
+    <url>
+         <loc>https://ken.beer/projects/</loc>
+         <lastmod>2025-07-27</lastmod>
+    </url>
+    <url>
+         <loc>https://ken.beer/techspeak/</loc>
+         <lastmod>2025-07-27</lastmod>
+    </url>
+    <url>
+         <loc>https://ken.beer/techspeak/field-guide/</loc>
+         <lastmod>2025-07-27</lastmod>
+    </url>
+    <url>
+         <loc>https://ken.beer/techspeak/field-guide/elicitation/</loc>
+         <lastmod>2025-07-27</lastmod>
+    </url>
+</urlset>
