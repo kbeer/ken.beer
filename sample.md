@@ -56,11 +56,11 @@ Present alternative scenarios to test boundaries:
 - "What's the worst-case scenario you've encountered?"
 
 ### The Storytelling Technique
-| Prompt | Purpose |
-|--------|---------|
-| "Tell me about a time when..." | Reveals exceptional cases |
-| "Walk me through your worst day..." | Uncovers failure modes |
-| "What's the most interesting problem you've solved?" | Identifies expertise boundaries |
+\| Prompt \| Purpose \|
+\|--------\|---------\|
+\| "Tell me about a time when..." \| Reveals exceptional cases \|
+\| "Walk me through your worst day..." \| Uncovers failure modes \|
+\| "What's the most interesting problem you've solved?" \| Identifies expertise boundaries \|
 
 ---
 
@@ -128,10 +128,10 @@ Don't just ask questions—review existing documentation together:
 Create a systematic inventory of "what-if" scenarios:
 
 ```markdown
-| Normal Case | Exception | Expert Response |
-|-------------|-----------|-----------------|
-| File uploads successfully | File is corrupted | Run validation, quarantine, alert admin |
-| API returns 200 | API returns 500 | Retry 3x, fallback to cache, escalate |
+\| Normal Case \| Exception \| Expert Response \|
+\|-------------\|-----------\|-----------------\|
+\| File uploads successfully \| File is corrupted \| Run validation, quarantine, alert admin \|
+\| API returns 200 \| API returns 500 \| Retry 3x, fallback to cache, escalate \|
 ```
 
 ---
