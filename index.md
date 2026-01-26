@@ -1,9 +1,6 @@
 ---
 layout: home
-title: Home
 ---
-
-# Ken Beer
 
 <details>
 <summary>Techspeak</summary>
