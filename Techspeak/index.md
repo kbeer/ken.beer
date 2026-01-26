@@ -13,6 +13,3 @@ Patterns and techniques worth remembering.
 
 - [Elicitation](field-guide/elicitation.md) — Getting information from systems and people
 
----
-
-[← Home](/)

@@ -9,4 +9,4 @@ Found in the wild: [MCP Elicitation Spec](https://modelcontextprotocol.io/specif
 
 ---
 
-[← Field Guide](.) · [Home](/)
+[← Field Guide](.)

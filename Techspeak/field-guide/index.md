@@ -11,4 +11,4 @@ Patterns and techniques worth remembering.
 
 ---
 
-[← Techspeak](../) · [Home](/)
+[← Techspeak](../)
