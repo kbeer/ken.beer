@@ -13,4 +13,3 @@ Notes from the field on technical topics.
 
 ---
 
-*[sample.md](sample.md) — markdown reference*
