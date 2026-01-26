@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Field Guide
 ---
 
 # Field Guide
