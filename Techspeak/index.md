@@ -1,2 +1,18 @@
+---
+layout: default
+title: Techspeak
+---
 
-[field-guide](Techspeak/field-guide/) → [elicitation](Techspeak/field-guide/elicitation.md)
+# Techspeak
+
+Notes from the field on technical topics.
+
+## Field Guide
+
+Patterns and techniques worth remembering.
+
+- [Elicitation](field-guide/elicitation.md) — Getting information from systems and people
+
+---
+
+[← Home](/)

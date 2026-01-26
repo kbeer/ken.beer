@@ -1,3 +1,8 @@
+---
+layout: default
+title: Sample
+---
+
 # The Art of Technical Elicitation
 *A comprehensive guide to extracting knowledge from experts*
 
@@ -174,8 +179,8 @@ Create a systematic inventory of "what-if" scenarios:
 *Last updated: January 2025*  
 *Part of the Techspeak Field Guide series*
 
-**[← Back to Field Guide](../)**  |  **[Next: Requirements Gathering →](../requirements/)**
+*Questions? [ken.beer@ken.beer](mailto:ken.beer@ken.beer)*
 
 ---
 
-*Have questions or improvements? [Contact me](mailto:your-email@example.com) or suggest edits on [GitHub](https://github.com/yourusername/repo).*
+[← Home](/)

@@ -1,3 +1,8 @@
+---
+layout: default
+title: CEO Personal OS
+---
+
 # CEO Personal Operating System
 
 A private, single-user system for reflection, clarity, and intentional leadership.
@@ -153,3 +158,7 @@ After three months using this system, you should:
 This system creates clarity, not overwhelm.
 
 Start with one daily check-in. Everything else follows.
+
+---
+
+[← Home](/)
