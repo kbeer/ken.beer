@@ -1,0 +1,20 @@
+---
+import Logo from './Logo.astro';
+import type { Props } from '@astrojs/starlight/props';
+---
+
+<a href="/" class="site-title">
+  <Logo size="md" />
+</a>
+
+<style>
+  .site-title {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .site-title:hover {
+    opacity: 0.8;
+  }
+</style>
