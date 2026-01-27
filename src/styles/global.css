@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Prose styling for markdown content */
+.prose {
+  @apply text-stone-700 leading-relaxed;
+}
+
+.prose h1 {
+  @apply text-3xl font-semibold text-stone-900 mb-6;
+}
+
+.prose h2 {
+  @apply text-xl font-semibold text-stone-900 mt-10 mb-4;
+}
+
+.prose h3 {
+  @apply text-lg font-medium text-stone-900 mt-8 mb-3;
+}
+
+.prose p {
+  @apply mb-4;
+}
+
+.prose a {
+  @apply text-stone-900 underline underline-offset-2 hover:text-stone-600;
+}
+
+.prose ul {
+  @apply list-disc list-inside mb-4 space-y-1;
+}
+
+.prose ol {
+  @apply list-decimal list-inside mb-4 space-y-1;
+}
+
+.prose code {
+  @apply bg-stone-100 px-1.5 py-0.5 rounded text-sm;
+}
+
+.prose pre {
+  @apply bg-stone-100 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0;
+}
+
+.prose blockquote {
+  @apply border-l-2 border-stone-300 pl-4 italic text-stone-600;
+}
+
+/* Details/summary styling */
+details {
+  @apply mb-4;
+}
+
+summary {
+  @apply cursor-pointer text-stone-900 font-medium hover:text-stone-600;
+}
+
+details[open] summary {
+  @apply mb-2;
+}

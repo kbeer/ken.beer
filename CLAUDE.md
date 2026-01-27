@@ -4,48 +4,77 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-Personal website for ken.beer. Static markdown via GitHub Pages + Jekyll (minima theme).
+Personal website for ken.beer built with Astro + Tailwind CSS. Deployed to GitHub Pages.
 
-## Publishing
+## Commands
 
-Push to `main`. GitHub Pages builds automatically.
+```bash
+npm run dev      # Start dev server at localhost:4321
+npm run build    # Build for production
+npm run preview  # Preview production build locally
+```
+
+## Deployment
+
+Push to `main`. GitHub Actions builds and deploys automatically.
 
 ## Structure
 
-Flat. All pages live at root level as `page-name.md`. No nested directories.
+```
+src/
+├── content/docs/    # Markdown content (auto-routed to /docs/*)
+├── layouts/         # Page layouts (Base.astro)
+├── pages/           # Astro pages (index.astro, etc.)
+└── styles/          # Global CSS (Tailwind)
+public/              # Static assets (favicon, CNAME)
+```
 
-## Adding a Page
+## Adding Content
 
-1. Create `page-name.md` at root with:
-   ```
-   ---
-   layout: default
-   ---
+### Markdown pages (recommended for docs/articles)
 
-   # Page Title
-
-   Content here.
-   ```
-
-2. Link from `index.md` inside a `<details>` section
-
-## Homepage Pattern
-
-Use `<details>` for collapsible sections:
+Create `src/content/docs/my-page.md`:
 
 ```markdown
-<details>
-<summary>Section Name</summary>
+---
+title: My Page Title
+description: Optional description
+---
 
-- [Page One](page-one.md)
-- [Page Two](page-two.md)
+# My Page
 
-</details>
+Content in markdown...
 ```
+
+Automatically available at `/docs/my-page`
+
+### Astro pages (for custom layouts)
+
+Create `src/pages/my-page.astro`:
+
+```astro
+---
+import Base from '../layouts/Base.astro'
+---
+
+<Base title="My Page">
+  <div class="prose">
+    <h1>My Page</h1>
+    <p>Content here...</p>
+  </div>
+</Base>
+```
+
+## Styling
+
+- Uses Tailwind CSS v4
+- Prose styling defined in `src/styles/global.css`
+- Stone color palette for minimal aesthetic
+- `<details>` elements styled for dropdowns
 
 ## Conventions
 
-- Flat structure (no subdirectories for content)
-- Kebab-case filenames: `my-page.md`
-- No `title:` in front matter (keeps pages out of header nav)
-- No `[Home](/)` links (users click site title to go home)
+- Markdown content goes in `src/content/docs/`
+- Custom pages go in `src/pages/`
+- All pages use `Base` layout
+- Wrap content in `<div class="prose">` for typography styling
