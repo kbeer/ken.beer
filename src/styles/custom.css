@@ -1,14 +1,22 @@
 /* Custom theme overrides */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
 
 /* Teal accent like Netlify docs */
 :root {
 	--sl-color-accent-low: #083344;
 	--sl-color-accent: #0d9488;
 	--sl-color-accent-high: #5eead4;
+	--sl-font-headings: 'Archivo', system-ui, sans-serif;
 }
 
 :root[data-theme='light'] {
 	--sl-color-accent-low: #ccfbf1;
 	--sl-color-accent: #0d9488;
 	--sl-color-accent-high: #134e4a;
+}
+
+/* Apply Archivo to all headings */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Archivo', system-ui, sans-serif;
+	letter-spacing: 0.02em;
 }
