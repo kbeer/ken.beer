@@ -10,13 +10,9 @@ hero:
       icon: right-arrow
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid>
-	<Card title="Docs" icon="document">
-		Technical notes and documentation.
-	</Card>
-	<Card title="Projects" icon="rocket">
-		Things I'm building.
-	</Card>
+	<LinkCard title="Docs" description="Technical notes and documentation." href="/docs/example/" />
+	<LinkCard title="Projects" description="Things I'm building." href="/docs/example/" />
 </CardGrid>
