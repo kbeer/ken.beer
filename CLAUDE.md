@@ -4,20 +4,48 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-Personal website for ken.beer. Static markdown served via GitHub Pages with Jekyll (minima theme).
+Personal website for ken.beer. Static markdown via GitHub Pages + Jekyll (minima theme).
 
 ## Publishing
 
-Push to `main` branch. GitHub Pages builds and serves automatically.
+Push to `main`. GitHub Pages builds automatically.
 
-## Content Structure
+## Structure
 
-- **Root**: Homepage (`index.md`)
-- **Techspeak/**: Technical field guides and notes
-- **ceo-personal-os/**: Personal operating system for reflection and planning
+Flat. All pages live at root level as `page-name.md`. No nested directories.
+
+## Adding a Page
+
+1. Create `page-name.md` at root with:
+   ```
+   ---
+   layout: default
+   ---
+
+   # Page Title
+
+   Content here.
+   ```
+
+2. Link from `index.md` inside a `<details>` section
+
+## Homepage Pattern
+
+Use `<details>` for collapsible sections:
+
+```markdown
+<details>
+<summary>Section Name</summary>
+
+- [Page One](page-one.md)
+- [Page Two](page-two.md)
+
+</details>
+```
 
 ## Conventions
 
-- All content is markdown with YAML front matter (`layout: default`, `title: Page Title`)
-- Add navigation footer to pages: `[← Parent](../) · [Home](/)`
-- ceo-personal-os review files follow naming: `YYYY-MM-DD.md` (daily), `YYYY-Www.md` (weekly), `YYYY-Qn.md` (quarterly), `YYYY.md` (annual)
+- Flat structure (no subdirectories for content)
+- Kebab-case filenames: `my-page.md`
+- No `title:` in front matter (keeps pages out of header nav)
+- No `[Home](/)` links (users click site title to go home)
